@@ -59,7 +59,10 @@ public: \
 
 
 #define ToonTanks_Source_ToonTanks_BasePawn_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__CapsuleComponent() { return STRUCT_OFFSET(ABasePawn, CapsuleComponent); }
+	FORCEINLINE static uint32 __PPO__CapsuleComponent() { return STRUCT_OFFSET(ABasePawn, CapsuleComponent); } \
+	FORCEINLINE static uint32 __PPO__BaseMesh() { return STRUCT_OFFSET(ABasePawn, BaseMesh); } \
+	FORCEINLINE static uint32 __PPO__TurretMesh() { return STRUCT_OFFSET(ABasePawn, TurretMesh); } \
+	FORCEINLINE static uint32 __PPO__ProjectileSpawn() { return STRUCT_OFFSET(ABasePawn, ProjectileSpawn); }
 
 
 #define ToonTanks_Source_ToonTanks_BasePawn_h_9_PROLOG
