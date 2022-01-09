@@ -58,7 +58,10 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABasePawn)
 
 
-#define ToonTanks_Source_ToonTanks_BasePawn_h_12_PRIVATE_PROPERTY_OFFSET
+#define ToonTanks_Source_ToonTanks_BasePawn_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__CapsuleComponent() { return STRUCT_OFFSET(ABasePawn, CapsuleComponent); }
+
+
 #define ToonTanks_Source_ToonTanks_BasePawn_h_9_PROLOG
 #define ToonTanks_Source_ToonTanks_BasePawn_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
