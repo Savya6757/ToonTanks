@@ -12,3 +12,14 @@ ATank::ATank() {
 	PovCamera = CreateDefaultSubobject<UCameraComponent>("PovCamera");
 	PovCamera->SetupAttachment(SpringArm);
 }
+
+void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) {
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &ATank::MoveTank);
+}
+
+void ATank::MoveTank(float Value) {
+	FVector DeltaLocation(0.f);
+	DeltaLocation.X = Value;
+	AddActorLocalOffset(DeltaLocation);
+}
