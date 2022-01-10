@@ -24,7 +24,13 @@ private:
 		class USpringArmComponent* SpringArm;
 	UPROPERTY(VisibleAnywhere,Category = "Components")
 		class UCameraComponent* PovCamera;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Movement", meta = (AllowPrivateAccess = true))
+		float Speed = 400.f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = true))
+		float TurnRate = 100.f;
 
 	void MoveTank(float Value);
+	void TurnTank(float Value);
+	
 	
 };

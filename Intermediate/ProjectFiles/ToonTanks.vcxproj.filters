@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ToonTanks.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6EC022FD-1C6E-454D-B5F9-95797FE25B66}</UniqueIdentifier>
+      <UniqueIdentifier>{03108E5D-E362-4E64-A4D3-74FDEC1076B8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ToonTanks.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{BBA4DDF9-B887-4B76-B87B-F8F734DB40CD}</UniqueIdentifier>
+      <UniqueIdentifier>{49209AA6-BC9F-47B8-88EE-56BD32328CBD}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -29,7 +29,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ToonTanks">
-      <UniqueIdentifier>{7E93E444-1469-4F24-A46B-836AA07A6489}</UniqueIdentifier>
+      <UniqueIdentifier>{B30105B2-D214-4C5C-A8CA-F12CFEABF458}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ToonTanks\BasePawn.cpp">
       <Filter>Source\ToonTanks</Filter>
