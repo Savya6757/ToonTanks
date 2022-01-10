@@ -19,6 +19,7 @@ void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &ATank::MoveTank);
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &ATank::TurnTank);
+	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &ATank::Fire);
 }
 
 // Called when the game starts or when spawned

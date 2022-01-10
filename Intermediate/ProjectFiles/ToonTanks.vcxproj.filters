@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ToonTanks.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{16C8DD6A-EA8A-45E5-A544-14AA621DBA52}</UniqueIdentifier>
+      <UniqueIdentifier>{DD6ECE9E-58BD-4261-9DF2-C22E493E08DF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ToonTanks.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{EC0A97A7-7B76-4E30-8197-265E92FEF170}</UniqueIdentifier>
+      <UniqueIdentifier>{8A70EF88-9068-48D6-8513-A3A846757ED3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -29,12 +29,24 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ToonTanks">
-      <UniqueIdentifier>{96E63C76-0561-4178-B089-657557679779}</UniqueIdentifier>
+      <UniqueIdentifier>{873072AE-9D5A-4D66-9A4C-573F230ADBBD}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ToonTanks\BasePawn.cpp">
       <Filter>Source\ToonTanks</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\ToonTanks\BasePawn.h">
+      <Filter>Source\ToonTanks</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ToonTanks\HealthComponent.cpp">
+      <Filter>Source\ToonTanks</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\HealthComponent.h">
+      <Filter>Source\ToonTanks</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ToonTanks\Projectile.cpp">
+      <Filter>Source\ToonTanks</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\Projectile.h">
       <Filter>Source\ToonTanks</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\ToonTanks\Tank.cpp">
@@ -50,6 +62,12 @@
       <Filter>Source\ToonTanks</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\ToonTanks\ToonTanks.h">
+      <Filter>Source\ToonTanks</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ToonTanks\ToonTanksGameMode.cpp">
+      <Filter>Source\ToonTanks</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ToonTanks\ToonTanksGameMode.h">
       <Filter>Source\ToonTanks</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\ToonTanks\Tower.cpp">
