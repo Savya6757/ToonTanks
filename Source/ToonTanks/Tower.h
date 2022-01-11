@@ -18,6 +18,7 @@ public:
 	// Called every frame
 	void virtual Tick(float DeltaTime) override;
 
+	void ManageDestruction();
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

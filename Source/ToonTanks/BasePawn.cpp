@@ -38,6 +38,10 @@ void ABasePawn::Fire() {
 
 }
 
+void ABasePawn::ManageDestruction() {
+	// Add effects and stuff
+}
+
 
 
 

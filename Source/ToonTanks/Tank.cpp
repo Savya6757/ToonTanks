@@ -42,7 +42,7 @@ void ATank::Tick(float DeltaTime)
 			false,
 			HitResult
 		);
-		DrawDebugSphere(
+		/*DrawDebugSphere(
 			GetWorld(),
 			HitResult.ImpactPoint,
 			10.f,
@@ -50,7 +50,7 @@ void ATank::Tick(float DeltaTime)
 			FColor::Red,
 			false,
 			-1.f
-		);
+		);*/
 
 		RotateTurret(HitResult.ImpactPoint);
 	}
@@ -70,4 +70,10 @@ void ATank::TurnTank(float Value) {
 	FRotator DeltaRotation(0.f);
 	DeltaRotation.Yaw = Value * DeltaTime * TurnRate;
 	AddActorLocalRotation(DeltaRotation, true);
+}
+
+void ATank::ManageDestruction() {
+	Super::ManageDestruction();
+	SetActorHiddenInGame(true);
+	SetActorTickEnabled(false);
 }
